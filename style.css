@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root{
-    --background-tr-th: aliceblue;
+    --background-tr-th: #FFF;
     --body-background: url("./");
     --btn-background: #484848;
     --btn-hover-background: #f0f0f0;
@@ -30,26 +30,63 @@ body{
     align-items: center;
     flex-direction: column;
 }
-input{
-    width: 280px;
-    color: var(--btn-background);
+.container-buscar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-button{
-    margin-top: 20px;
-    padding: 10px;
-    background-color:var( --btn-background);
-    color: white;
-}
-button:hover{
-    background-color: var( --btn-hover-background);
-    color: black;
-}
-table{
-    margin-top: 120px;
-}
-td,th{
-    border-radius: 0 ;
-    text-align: center;
-    background-color: var(--background-tr-th);
-    padding: 25px;
-}
+
+/** Trabalhando Inputs */
+    input{
+        width: 280px;
+        padding: 10px;
+        color: var(--btn-background);
+    }
+    .input-buscar{
+        width: 280px;
+        padding: 10px;
+        color: var(--btn-background);
+    }
+
+/** Trabalhando botões */
+    .btn-buscar{
+        margin-left: 5px;
+    }
+    button{
+        padding: 10px;
+        background-color:var( --btn-background);
+        color: white;
+        transition: 0.5s;
+    }
+    button:hover{
+        background-color: var( --btn-hover-background);
+        color: black;
+        transition: 0.5s;
+    }
+
+/** Trabalhando tabela */
+    table{margin-top: 120px;}
+    th{
+        color: #ececec;
+        background-color: var(--btn-background);
+        border-radius: 0 ;
+        text-align: center;
+        padding: 25px;
+        transition: 0.3s;
+    }
+    td{
+        border-radius: 0;
+        text-align: center;
+        background-color: var(--background-tr-th);
+        padding: 25px;
+        transition: 0.3s;
+    }
+    tbody td tr:hover{
+        color: #fff;
+        background: black;
+        border-radius: 0 ;
+        text-align: center;
+        padding: 25px;
+        transition: 0.3s;
+    }
